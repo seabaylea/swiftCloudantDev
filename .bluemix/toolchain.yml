@@ -45,7 +45,7 @@ deploy:
     $ref: deploy.json
   service-category: pipeline
   parameters:
-    dev-region: "{{region}}"
-    dev-organization: "{{organization}}"
-    dev-space: "dev"
-    app-name: "knownapp"
+    dev-region: "{{deploy.parameters.dev-region}}"
+    dev-organization: "{{deploy.parameters.dev-organization}}"
+    dev-space: "{{deploy.parameters.dev-space}}"
+    app-name: "{{deploy.parameters.app-name}}"
